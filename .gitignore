@@ -24,3 +24,5 @@ typings/
 .env
 
 *.db
+
+config.json
