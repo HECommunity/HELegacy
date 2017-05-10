@@ -3,3 +3,5 @@ First attempt to recode the Hacker Experience Legacy game. Backend in node.js be
 
 DISCLAIMER: 
 Not supported and not developed by Neoart Labs, the team behind new Hacker Experience 1 (HEBorn) and Hacker Experience 2.
+
+Our Discord: https://discord.gg/222G2XT
