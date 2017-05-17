@@ -31,7 +31,7 @@ module.exports.main = function (cb) {
 					console.log("HEConfig ".red + 'Try fix your config.json file before starting again. Exiting node.js');
 					process.exit(1);
 				}
-				config.configexample1 = "example1";
+				config.port = "80";
 				config.configexample2 = "example2";
 				fs.writeFileSync ("./config.json", JSON.stringify(config, null, "\t"));
 				setTimeout(function() {
@@ -41,7 +41,7 @@ module.exports.main = function (cb) {
 			});
 		} else {
 			console.log("HEConfig ".red + "Creating config file!");
-			config.configexample1 = "example1";
+			config.port = "80";
 			config.configexample2 = "example2";
 			fs.writeFileSync ("./config.json", JSON.stringify(config, null, "\t"));
 			setTimeout(function() {
@@ -52,10 +52,10 @@ module.exports.main = function (cb) {
 	}
 };
 
-module.exports.configexample1 = function () {
+module.exports.port = function () {
 	try {
 		var config = require('../config.json');
-		return config.configexample1;
+		return config.port;
 	} catch(err) {
 	}
 }
